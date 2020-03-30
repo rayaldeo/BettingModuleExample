@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    readonly string IMAGE_PATH = "Assets/Person/";
     public string _userImagePath;
     public float player_totalMoney;
     public float player_bet;
@@ -76,5 +77,10 @@ public class Player : MonoBehaviour
         {
             Debug.Log(this.player_name + " Is unable to decrease the bet any further because negative/zero bets are not allowed.");
         }
+    }
+
+    public string GetImagePath()
+    {
+        return this.IMAGE_PATH + _userImagePath;
     }
 }

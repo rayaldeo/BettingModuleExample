@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pair : MonoBehaviour
+public class BettingRoster : MonoBehaviour
 {
 
-    public Player playerOne,playerTwo;
+    public GameObject _playerPairs;
 
     // Start is called before the first frame update
     void Start()
@@ -16,16 +16,6 @@ public class Pair : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public Player GetPlayerOne()
-    {
-        return this.playerOne;
-    }
-
-    public Player GetPlayerTwo()
-    {
-        return this.playerTwo;
+        Debug.Log("This is the amount of player pair:" + _playerPairs.transform.childCount);
     }
 }
