@@ -83,4 +83,9 @@ public class Player : MonoBehaviour
     {
         return this.IMAGE_PATH + _userImageName;
     }
+
+    public string GetImageName()
+    {
+        return this._userImageName;
+    }
 }

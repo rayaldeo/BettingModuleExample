@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BettingRoster : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class BettingRoster : MonoBehaviour
     public GameObject _playerPairs;
     public GameObject _rosterItem;
     public GameObject _roster;
+    public GameObject _images;
 
     // Start is called before the first frame update
     void Start()
@@ -28,8 +30,11 @@ public class BettingRoster : MonoBehaviour
         {
             Debug.Log("Making a roster item");
             GameObject _tempRosterItem = Instantiate(_rosterItem,new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-            _tempRosterItem.GetComponent<RosterItem>().SetLeftPlayer(pair.GetComponent<Pair>().GetPlayerOne());
-            _tempRosterItem.GetComponent<RosterItem>().SetRightPlayer(pair.GetComponent<Pair>().GetPlayerTwo());
+            _tempRosterItem.GetComponent<RosterItem>().SetLeftPlayer(pair.GetComponent<Pair>().GetPlayerOne(), 
+                GameObject.Find(pair.GetComponent<Pair>().GetPlayerOne().GetImageName()));
+            _tempRosterItem.GetComponent<RosterItem>().SetRightPlayer(pair.GetComponent<Pair>().GetPlayerTwo(), 
+                GameObject.Find(pair.GetComponent<Pair>().GetPlayerTwo().GetImageName()));
+            _tempRosterItem.GetComponent<RosterItem>().DisplayValues();
             _tempRosterItem.transform.parent = _roster.transform;
         }
         _rosterItem.SetActive(false);

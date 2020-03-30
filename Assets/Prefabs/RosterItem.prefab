@@ -286,12 +286,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 328109f3d57b8d542b0f12994f239b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftPerson: {fileID: 0}
-  rightPerson: {fileID: 0}
-  leftPersonImage: {fileID: 2985496427961793196}
-  rightPersonImage: {fileID: 2985496428107295698}
-  leftPersonText: {fileID: 2985496427095276097}
-  rightPersonText: {fileID: 2985496427095276097}
+  leftPlayer: {fileID: 0}
+  rightPlayer: {fileID: 0}
+  leftPlayerImage: {fileID: 2985496427961793196}
+  rightPlayerImage: {fileID: 2985496428107295698}
+  leftPlayerText: {fileID: 2985496427064163489}
+  rightPlayerText: {fileID: 2985496427095276097}
 --- !u!1 &2985496427961793198
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,8 +355,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c64ed2528a69a784084cedbf2ba27fbd, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -503,8 +503,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 4c850b94fc437b3468307deefec62b8e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
