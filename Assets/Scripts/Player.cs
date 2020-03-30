@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public Image _userImage;
+    public string _userImagePath;
     public float player_totalMoney;
     public float player_bet;
     public string player_name;
