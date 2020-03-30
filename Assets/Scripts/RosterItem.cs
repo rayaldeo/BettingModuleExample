@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class RosterItem : MonoBehaviour
 {
-    public Player leftPerson, rightPerson;
-    public Image leftPersonImage, rightPersonImage;
-    public Text leftPersonText, rightPersonText;
+    public Player leftPlayer, rightPlayer;
+    public Image leftPlayerImage, rightPlayerImage;
+    public Text leftPlayerText, rightPlayerText;
 
     // Start is called before the first frame update
     void Start()
@@ -18,12 +18,24 @@ public class RosterItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DisplayValues();
+        Debug.Log(leftPlayer.GetPlayerName());
+        if(leftPlayer!=null && rightPlayer != null) { DisplayValues(); }
+       
     }
 
     void DisplayValues()
     {
-        leftPersonText.text = leftPerson.GetPlayerName();
-        rightPersonText.text = rightPerson.GetPlayerName();
+        leftPlayerText.text = leftPlayer.GetPlayerName();
+        rightPlayerText.text = rightPlayer.GetPlayerName();
+    }
+
+    public void SetLeftPlayer(Player player) 
+    {
+        this.leftPlayer = player;
+    }
+
+    public void SetRightPlayer(Player player)
+    {
+        this.rightPlayer = player;
     }
 }
