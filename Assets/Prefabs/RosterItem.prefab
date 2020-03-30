@@ -238,6 +238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2985496427229258645}
   - component: {fileID: 2985496427229258644}
+  - component: {fileID: 8340656075630955983}
   m_Layer: 5
   m_Name: RosterItem
   m_TagString: Untagged
@@ -273,6 +274,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2985496427229258646}
   m_CullTransparentMesh: 0
+--- !u!114 &8340656075630955983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2985496427229258646}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328109f3d57b8d542b0f12994f239b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftPerson: {fileID: 0}
+  rightPerson: {fileID: 0}
+  leftPersonImage: {fileID: 0}
+  rightPersonImage: {fileID: 0}
+  leftPersonText: {fileID: 0}
+  rightPersonText: {fileID: 0}
 --- !u!1 &2985496427961793198
 GameObject:
   m_ObjectHideFlags: 0

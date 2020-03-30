@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-
+    public Image _userImage;
     public float player_totalMoney;
     public float player_bet;
     public string player_name;
