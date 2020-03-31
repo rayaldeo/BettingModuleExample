@@ -55,5 +55,6 @@ public class RosterItem : MonoBehaviour
     {
         Debug.Log("Roster Item was clicked");
         bettingPanel.GetComponent<BetPanel>().SetPlayers(leftPlayer, rightPlayer);
+        bettingPanel.GetComponent<BetPanel>().DisplayBettingPanel();
     }
 }
