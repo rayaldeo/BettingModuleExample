@@ -14,12 +14,14 @@ public class BetPanel : MonoBehaviour
     public Image leftPlayerImage, rightPlayerImage;
     public Slider _customBetSlider;
     public Text _smallButtonValue, _mediumButtonValue, _largeButtonValue;
+
+    readonly float smallBet = 250.0f;
     
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        SetBettingButtonValuesAndSlider();
     }
 
     // Update is called once per frame
@@ -28,8 +30,43 @@ public class BetPanel : MonoBehaviour
         
     }
 
-    public void DisplayBetPanel()
+    public void DisplayBettingPanel()
     {
+        #region Set Names
+        this.leftPlayerNameText.text = leftPlayer.GetPlayerName();
+        this.rightPlayerNameText.text = rightPlayer.GetPlayerName();
+        #endregion
 
+        #region Set Player Total Money
+        this.leftPlayerTMValue.text = leftPlayer.GetPlayerMoney().ToString();
+        this.rightPlayerTMValue.text = rightPlayer.GetPlayerMoney().ToString();
+        #endregion
+
+        #region Set Player Image
+        this.leftPlayerImage.sprite = _imageResources.GetComponent<Images>().GetSprite(leftPlayer.GetImageIndex());
+        this.rightPlayerImage.sprite = _imageResources.GetComponent<Images>().GetSprite(rightPlayer.GetImageIndex());
+        #endregion
+    }
+
+    public void SetPlayers(Player leftPlayer, Player rightPlayer)
+    {
+        this.leftPlayer = leftPlayer;
+        this.rightPlayer = rightPlayer;
+    }
+
+    void SetBettingButtonValuesAndSlider()
+    {
+        _smallButtonValue.text = smallBet.ToString();
+
+        float tempMedium = smallBet * 4;
+        _mediumButtonValue.text = tempMedium.ToString();
+
+        float tempLarge = tempMedium * 5;
+        _largeButtonValue.text = tempLarge.ToString();
+
+        #region Slider Values
+        _customBetSlider.minValue = smallBet;
+        _customBetSlider.maxValue = tempLarge;
+        #endregion
     }
 }

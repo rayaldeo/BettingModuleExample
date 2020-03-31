@@ -9,7 +9,6 @@ public class BettingRoster : MonoBehaviour
     public GameObject _playerPairs;
     public GameObject _rosterItem;
     public GameObject _roster;
-    public GameObject _images;
 
     // Start is called before the first frame update
     void Start()

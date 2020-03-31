@@ -12,6 +12,7 @@ public class RosterItem : MonoBehaviour
     public Image leftPlayerImage, rightPlayerImage;
     public Text leftPlayerText, rightPlayerText;
     int leftPlayerIndex, rightPlayerIndex;
+    public GameObject bettingPanel;
     
 
     // Start is called before the first frame update
@@ -48,5 +49,11 @@ public class RosterItem : MonoBehaviour
         Debug.Log("Setting Right Player");
         this.rightPlayer = player;
         this.rightPlayerIndex = player.GetImageIndex();
+    }
+
+    public void PresentBettingPanel()
+    {
+        Debug.Log("Roster Item was clicked");
+        bettingPanel.GetComponent<BetPanel>().SetPlayers(leftPlayer, rightPlayer);
     }
 }

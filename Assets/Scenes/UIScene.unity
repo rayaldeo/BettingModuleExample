@@ -3609,6 +3609,7 @@ GameObject:
   - component: {fileID: 1540954263}
   - component: {fileID: 1540954262}
   - component: {fileID: 1540954261}
+  - component: {fileID: 1540954264}
   m_Layer: 0
   m_Name: CustomBetContainer
   m_TagString: Untagged
@@ -3698,6 +3699,20 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &1540954264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540954259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70573f6f2ebf8748b7943a62692f2b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _customBetSlider: {fileID: 471221117}
+  _customBet: {fileID: 684037365}
 --- !u!1 &1550923301
 GameObject:
   m_ObjectHideFlags: 0
@@ -4057,6 +4072,16 @@ PrefabInstance:
       propertyPath: _imageResources
       value: 
       objectReference: {fileID: 1194297309}
+    - target: {fileID: 8340656075630955983, guid: 13026be51822f6a438d91dfbe96f1012,
+        type: 3}
+      propertyPath: bettinPanel
+      value: 
+      objectReference: {fileID: 1796433110}
+    - target: {fileID: 8340656075630955983, guid: 13026be51822f6a438d91dfbe96f1012,
+        type: 3}
+      propertyPath: bettingPanel
+      value: 
+      objectReference: {fileID: 1796433110}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13026be51822f6a438d91dfbe96f1012, type: 3}
 --- !u!1 &1622314443
@@ -4725,7 +4750,6 @@ MonoBehaviour:
   _playerPairs: {fileID: 1424019093}
   _rosterItem: {fileID: 357362302}
   _roster: {fileID: 2956375878876428156}
-  _images: {fileID: 0}
 --- !u!1 &1796433110
 GameObject:
   m_ObjectHideFlags: 0
