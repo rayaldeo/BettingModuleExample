@@ -5,10 +5,14 @@ using UnityEngine.UI;
 
 public class RosterItem : MonoBehaviour
 {
+    #region Resources
+    public GameObject _imageResources;
+    #endregion
     public Player leftPlayer, rightPlayer;
     public Image leftPlayerImage, rightPlayerImage;
     public Text leftPlayerText, rightPlayerText;
-    GameObject leftPlayerSprite, rightPlayerSprite;
+    int leftPlayerIndex, rightPlayerIndex;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -27,22 +31,22 @@ public class RosterItem : MonoBehaviour
 
         leftPlayerText.text = leftPlayer.GetPlayerName();
         rightPlayerText.text = rightPlayer.GetPlayerName();
-        //this.leftPlayerImage = leftPlayerSprite.GetComponent<Image>();
-        //this.rightPlayerImage = rightPlayerSprite.GetComponent<Image>();
+        this.leftPlayerImage.sprite = _imageResources.GetComponent<Images>().GetSprite(leftPlayerIndex);
+        this.rightPlayerImage.sprite = _imageResources.GetComponent<Images>().GetSprite(rightPlayerIndex);
     }
 
-    public void SetLeftPlayer(Player player,GameObject image) 
+    public void SetLeftPlayer(Player player) 
     {
         Debug.Log("Setting Left Player");
         this.leftPlayer = player;
         Debug.Log("Setting Left Player Image");
-        this.leftPlayerSprite = image;
+        this.leftPlayerIndex = player.GetImageIndex();
     }
 
-    public void SetRightPlayer(Player player,GameObject image)
+    public void SetRightPlayer(Player player)
     {
         Debug.Log("Setting Right Player");
         this.rightPlayer = player;
-        this.rightPlayerSprite = image;
+        this.rightPlayerIndex = player.GetImageIndex();
     }
 }

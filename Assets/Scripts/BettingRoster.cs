@@ -30,10 +30,8 @@ public class BettingRoster : MonoBehaviour
         {
             Debug.Log("Making a roster item");
             GameObject _tempRosterItem = Instantiate(_rosterItem,new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
-            _tempRosterItem.GetComponent<RosterItem>().SetLeftPlayer(pair.GetComponent<Pair>().GetPlayerOne(), 
-                GameObject.Find(pair.GetComponent<Pair>().GetPlayerOne().GetImageName()));
-            _tempRosterItem.GetComponent<RosterItem>().SetRightPlayer(pair.GetComponent<Pair>().GetPlayerTwo(), 
-                GameObject.Find(pair.GetComponent<Pair>().GetPlayerTwo().GetImageName()));
+            _tempRosterItem.GetComponent<RosterItem>().SetLeftPlayer(pair.GetComponent<Pair>().GetPlayerOne());
+            _tempRosterItem.GetComponent<RosterItem>().SetRightPlayer(pair.GetComponent<Pair>().GetPlayerTwo());
             _tempRosterItem.GetComponent<RosterItem>().DisplayValues();
             _tempRosterItem.transform.parent = _roster.transform;
         }

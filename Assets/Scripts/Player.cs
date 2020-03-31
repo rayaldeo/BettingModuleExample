@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     readonly string IMAGE_PATH = "Assets/Person/";
+    public int _imageIndex;
     public string _userImageName;
     public float player_totalMoney;
     public float player_bet;
@@ -87,5 +88,10 @@ public class Player : MonoBehaviour
     public string GetImageName()
     {
         return this._userImageName;
+    }
+
+    public int GetImageIndex()
+    {
+        return this._imageIndex;
     }
 }
