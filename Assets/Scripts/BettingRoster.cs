@@ -10,10 +10,15 @@ public class BettingRoster : MonoBehaviour
     public GameObject _rosterItem;
     public GameObject _roster;
 
+    void Awake()
+    {
+        DisplayRoster();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        DisplayRoster();
+       
     }
 
     // Update is called once per frame
