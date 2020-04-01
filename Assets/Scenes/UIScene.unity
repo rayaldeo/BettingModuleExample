@@ -243,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _imageIndex: 0
   _userImageName: 
-  player_totalMoney: 0
+  player_totalMoney: 100000
   player_bet: 0
   player_name: Person 001
 --- !u!1 &185443623
@@ -570,7 +570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _imageIndex: 6
   _userImageName: 
-  player_totalMoney: 0
+  player_totalMoney: 100000
   player_bet: 0
   player_name: Person 007
 --- !u!1 &297790653
@@ -2185,7 +2185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _imageIndex: 1
   _userImageName: 
-  player_totalMoney: 0
+  player_totalMoney: 100000
   player_bet: 0
   player_name: Person 002
 --- !u!1 &955836988
@@ -2517,7 +2517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _imageIndex: 2
   _userImageName: 
-  player_totalMoney: 0
+  player_totalMoney: 100000
   player_bet: 0
   player_name: Person 003
 --- !u!1 &1190904298
@@ -2891,7 +2891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _imageIndex: 4
   _userImageName: 
-  player_totalMoney: 0
+  player_totalMoney: 100000
   player_bet: 0
   player_name: Person 005
 --- !u!1 &1372417287
@@ -3437,7 +3437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _imageIndex: 7
   _userImageName: 
-  player_totalMoney: 0
+  player_totalMoney: 100000
   player_bet: 0
   player_name: Person 008
 --- !u!1 &1481904956
@@ -4130,7 +4130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _imageIndex: 3
   _userImageName: 
-  player_totalMoney: 0
+  player_totalMoney: 100000
   player_bet: 0
   player_name: Person 004
 --- !u!1 &1630240391
@@ -4843,6 +4843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _imageResources: {fileID: 1194297309}
+  _playerPairs: {fileID: 1424019094}
   leftPlayer: {fileID: 0}
   rightPlayer: {fileID: 0}
   leftPlayerNameText: {fileID: 1973608046}
@@ -5318,7 +5319,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _imageIndex: 5
   _userImageName: 
-  player_totalMoney: 0
+  player_totalMoney: 100000
   player_bet: 0
   player_name: Person 006
 --- !u!1 &2055784896

@@ -7,6 +7,7 @@ public class BetPanel : MonoBehaviour
 {
     #region Resources
     public GameObject _imageResources;
+    public Transform _playerPairs;
     #endregion
     public Player leftPlayer, rightPlayer;
     public Text leftPlayerNameText, rightPlayerNameText,_confirmationBetValue,_customBetValue,
@@ -21,6 +22,10 @@ public class BetPanel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        #region Set First set of Players
+        SetPlayers(_playerPairs.GetChild(0).GetComponent<Pair>().GetPlayerOne(), _playerPairs.GetChild(0).GetComponent<Pair>().GetPlayerTwo());
+        DisplayBettingPanel();
+        #endregion
         SetBettingButtonValuesAndSlider();
     }
 
