@@ -65,8 +65,13 @@ public class BetPanel : MonoBehaviour
         _largeButtonValue.text = tempLarge.ToString();
 
         #region Slider Values
-        _customBetSlider.minValue = smallBet;
-        _customBetSlider.maxValue = tempLarge;
+        _customBetSlider.minValue = smallBet/smallBet;
+        _customBetSlider.maxValue = tempLarge/smallBet;
         #endregion
+    }
+
+    public float GetSmallBet()
+    {
+        return this.smallBet;
     }
 }

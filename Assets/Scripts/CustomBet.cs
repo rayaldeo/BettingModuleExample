@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CustomBet : MonoBehaviour
 {
     public Slider _customBetSlider;
-    public Text _customBet;
+    public Text _customBet,_smallBetValue;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +17,7 @@ public class CustomBet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _customBet.text = _customBetSlider.value.ToString();
+        float value = _customBetSlider.value * float.Parse(_smallBetValue.text);
+        _customBet.text = value.ToString();
     }
 }

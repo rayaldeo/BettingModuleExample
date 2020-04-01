@@ -1259,7 +1259,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3713,6 +3713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _customBetSlider: {fileID: 471221117}
   _customBet: {fileID: 684037365}
+  _smallBetValue: {fileID: 391000015}
 --- !u!1 &1550923301
 GameObject:
   m_ObjectHideFlags: 0
